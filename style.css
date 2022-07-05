@@ -1,0 +1,110 @@
+/* Variables And Imports */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+:root{
+    /*Colors*/
+    --attribution-color : hsl(228, 45%, 44%);
+
+    --white : hsl(0, 0%, 100%);
+    --light-gray : hsl(212, 45%, 89%);
+    --grayish-blue : hsl(220, 15%, 55%);
+    --dark-blue : hsl(218, 44%, 22%);
+
+    /*Fonts*/
+    --body-size : 15px;
+    --font-outfit : 'Outfit', sans-serif;
+
+    /*J Query*/
+    --mobile-max : 375px;
+    --desktop-max : 1440px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    /*background-color: yellow;*/
+}
+.attribution a { color: var(--attribution-color) }
+
+/**/
+body {
+    font: var(--body-size) var(--font-outfit);
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+   background-color: white;
+   width: 25%;
+   border-radius: 25px;
+   justify-content: center;
+
+   width: 290px;
+   height: 500px;
+
+   /* center on the screen */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+
+    /* Shodows */
+    box-shadow: 3px 2px 10px grey ;
+}
+
+.sub-container{
+    padding: 0 2% 5% 5%;
+}
+
+.img-container{
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+    padding: 4% 0 0 0;
+}
+
+.qr-image{
+    width: 92%;
+    border-radius: 1rem;
+}
+
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.subtitle{
+    text-align: center;
+    color: var(--grayish-blue);
+}
+
+/* *********************** SOMETHING THAT HELPED ME TO UNDERSTANDD ************************** */
+/*.card {
+    max-width: 1000px;
+    display: grid;
+    grid-template: "left right" / 300px 1fr;
+    background-color: #fed330;
+    border-radius: 10px;
+    height: 300px;
+  }
+  
+  .card>* {
+    padding: 20px;
+  }
+  
+  .left {
+    grid-area: left;
+  }
+  
+  .right {
+    grid-area: right;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .card {
+      grid-template: "left" "right" / 100%;
+    }
+  }
+  */
